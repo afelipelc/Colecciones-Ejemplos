@@ -59,6 +59,43 @@ public class MainClass {
 		}
 		
 		
+		/*
+		 * Programa que guarde mis números de la suerte
+		 * 20, 13, 6, 14, 7 y 21
+		 * considere además que posteriormente puedo tener nuevos
+		 * números de la suerte
+		 * nota: mis números iniciales están en un arreglo
+		 */
+		
+		//los números iniciales
+		int[] numerosSuerte = new int[6];
+		numerosSuerte[0] = 20;
+		numerosSuerte[1] = 13;
+		numerosSuerte[2] = 6;
+		numerosSuerte[3] = 14;
+		numerosSuerte[4] = 7;
+		numerosSuerte[5] = 21;
+		
+		//agregar la lista
+		List<Integer> numerosDeSuerte = new ArrayList<Integer>();
+
+		//extraer los números de la suerte y pasarlos a la lista
+		//¿Ajá y comó?
+		//con FOR
+//		for(int i=0; i < numerosSuerte.length; i++){
+//			numerosDeSuerte.add(numerosSuerte[i]);
+//		}
+		
+		//con Foreach
+		for(int item : numerosSuerte){
+			numerosDeSuerte.add(item);
+		}
+		
+		System.out.println("\n\nEstos son mis números de la suerte");
+		//recorremos la lista
+		for(int item : numerosDeSuerte){
+			System.out.println(item);
+		}
 	}
 
 }
